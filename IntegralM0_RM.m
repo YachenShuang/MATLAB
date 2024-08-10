@@ -11,10 +11,10 @@ function [M0] = IntegralM0_RM(forwarding,B1,ni,t)
 %   M0.rx, M0.ry,M0.rz : Magnetization Vector Tripartite
 %   M0.t :iterative time series
 %% 0.initialization assignment
-gamma = 0.267518*1e9;        % Magnetic spin ratio
-N     = 6.692*1e28;          % [/m^3]
-hq    = 1.054571628*1e-34;   % Planck's constant/2*pi [J.s]
-K     = 1.3805*1e-23;        % Boltzmann's constant  [J/K]
+gamma = 0.267518e9;        % Magnetic spin ratio
+N     = 6.692e28;          % [/m^3]
+hq    = 1.054571628e-34;   % Planck's constant/2*pi [J.s]
+K     = 1.3805e-23;        % Boltzmann's constant  [J/K]
 T0     = 293;                 % absolute temperature  [K]
 M0stre = N * gamma^2 * hq^2 / (4 * K * T0) .* forwarding.B0.Hsum(ni);  % magnetization vector strength
 Ln = length(ni);

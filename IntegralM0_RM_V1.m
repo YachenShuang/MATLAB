@@ -11,7 +11,7 @@ function [M0] = IntegralM0_RM_V1(forwarding,M0_ini,t0)
 %   M0.rx, M0.ry,M0.rz : Magnetization Vector Tripartite
 %   M0.t :iterative time series
 %% 0.initialization assignment
-gamma = 0.267518*1e9;        % Magnetic spin ratio
+gamma = 0.267518e9;        % Magnetic spin ratio
 Ln = size(M0_ini,1);
 rx = M0_ini(:,1);
 ry = M0_ini(:,2);                                            

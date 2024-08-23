@@ -1,3 +1,4 @@
+# GAM
 Main240305 file is the main program, please open this file for simulation
 Author: Ruixin Miao
 Data : 24.3.5
